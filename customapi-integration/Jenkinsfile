@@ -15,3 +15,4 @@ def pr = httpRequest customHeaders: [[maskValue: true, name: 'Authorization', va
 for (p in jsonParse(pr.content).values) { 
     println(p.source.branch.name)
 }
+echo 'This is a testing pipeline' 
